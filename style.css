@@ -1,0 +1,365 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+}
+
+header {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+header ul {
+  list-style: none;
+  padding: 0.4rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.8rem;
+}
+
+header section img {
+  width: 100%;
+}
+
+main {
+  background-image: url(imagenes/fondomain.jpg);
+  background-attachment: scroll;
+}
+main h1 {
+  padding: 1rem;
+  background-color: black;
+  font-size: 5rem;
+  color: orangered;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+p {
+  font-size: 3rem;
+  width: 52rem;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+footer img {
+  width: 6rem;
+}
+
+.mostwanted {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.mostwanted div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+}
+
+.mostwanted div img {
+  width: 80%;
+  padding-bottom: 2rem;
+}
+
+@keyframes animatediv {
+  0% {
+    transform: translateX(-33.5%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+.barraSuperior {
+  text-align: center;
+  transform: translateX(0%);
+  animation-name: animatediv;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+}
+
+.barraSuperior li {
+  display: inline-block;
+}
+
+.navbar {
+  background-color: rgb(20, 19, 19);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  padding: 1rem;
+}
+
+.navbar ul li:hover {
+  background-color: rgb(78, 75, 71);
+  border-radius: 1rem;
+  transform: scale(1.1);
+  transition: transform 2s;
+  cursor: pointer;
+}
+
+.navbar ul li a:hover {
+  color: rgb(251, 255, 0);
+  cursor: pointer;
+}
+
+.supermotos {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  padding-top: 2rem;
+  align-items: center;
+}
+
+.supermotos h2 {
+  font-size: 5rem;
+  padding-top: 2rem;
+}
+
+.supermotos__suzukititle {
+  color: rgba(203, 11, 21, 0.784);
+}
+
+.supermotos__titulotexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#zusukireverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.supermotos__bmwtitle {
+  color: violet;
+}
+
+.supermotos__imgtamaño {
+  width: 80%;
+  padding-top: 4rem;
+}
+
+.mediopago {
+  padding: 0rem 1rem 0rem 0rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.estilotexto h2 {
+  padding-bottom: 1rem;
+}
+.lineaDivisoria {
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4 1ft);
+  grid-template-areas:
+    "encabezado "
+    "mostwanted "
+    "productos"
+    "pie";
+}
+
+#encabezado {
+  grid-area: encabezado;
+}
+
+#Mostwanted {
+  grid-area: mostwanted;
+}
+
+#productos {
+  grid-area: productos;
+}
+
+#pie {
+  grid-area: pie;
+}
+
+/* Pagina Motos y Accesorios*/
+
+#pagmotos {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3 1ft);
+  grid-template-areas:
+    "encabezado "
+    "motos"
+    "pie";
+}
+.motos h1 {
+  font-size: 8rem;
+}
+.motos {
+  text-align: center;
+  grid-area: motos;
+}
+.motos__Products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.motos__Products img {
+  width: 60%;
+  padding-top: 3rem;
+}
+/* Contacto */
+
+main form {
+  padding: 1rem;
+}
+
+.boxContacto {
+  background-color: rgb(24, 22, 22);
+  border-color: black;
+  border-width: 0.7rem;
+  width: 40%;
+  line-height: 2rem;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.boxContacto label,
+div {
+  color: orangered;
+}
+.boxContacto input,
+select,
+option,
+textarea {
+  color: black;
+}
+article p {
+  align-content: center;
+  margin: auto;
+  background-color: black;
+  font-size: 1.5rem;
+}
+
+/* Nosotros */
+
+.Nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Nosotros article p {
+  padding: 2rem 0;
+  width: 80%;
+}
+
+.ContenidoNosotros {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.ContenidoNosotros img,
+iframe {
+  width: 40%;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(4 1ft);
+    grid-template-areas:
+      "encabezado encabezado"
+      "mostwanted mostwanted"
+      "productos productos"
+      "pie pie";
+  }
+
+  .navbar {
+    flex-direction: row;
+  }
+  .mostwanted div {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .mostwanted div img {
+    width: 30%;
+  }
+
+  .supermotos {
+    flex-direction: row;
+  }
+
+  p {
+    width: 30rem;
+    padding-top: 2rem;
+    overflow: hidden;
+    font-size: 1.5rem;
+  }
+
+  .supermotos__imgtamaño {
+    width: 50%;
+  }
+
+  #zusukireverse {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .supermotos h2 {
+    font-size: 3rem;
+  }
+
+  /* Pagina Motos y Accesorios*/
+
+  .motos__Products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+  }
+
+  .motos__Products div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+  }
+  .motos__Products div img {
+    width: 90%;
+  }
+
+  .detalle {
+    padding-top: 2rem;
+  }
+}

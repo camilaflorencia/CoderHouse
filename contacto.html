@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header id="encabezado">
+      <ul class="barraSuperior">
+        <li>ENVIOS A TODO EL PAÍS</li>
+        <li>|</li>
+        <li>18 CUOTAS SIN INTERÉS</li>
+      </ul>
+      <div class="navbar">
+        <img src="./Imagenes/Logo.jpg" alt="imagenLogo" />
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="motos.html">MOTOS</a></li>
+          <li><a href="accesorios.html">ACCESORIOS</a></li>
+          <li><a href="Nosotros.html">NOSOTROS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <form action="">
+        <fieldset class="boxContacto">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" placeholder="Introduzca su Nombre" />
+          <br />
+          <label for="surname">Apellido</label>
+          <input
+            type="text"
+            id="surname"
+            placeholder="Introduzca su Apellido"
+          />
+          <br />
+          <label for="Email">Email :</label>
+          <input type="text" id="Email" placeholder="Escriba aqui su email" />
+          <div>Elija su sexo:</div>
+          <label for="hombre">Hombre</label>
+          <input type="radio" name="sexo" id="hombre" value="Es hombre" />
+          <br />
+          <label for="mujer">Mujer</label>
+          <input type="radio" name="sexo" id="mujer" value="Es mujer" />
+          <br />
+          <label for="newsletter">Recibir NewsLetter?</label>
+          <input
+            type="checkbox"
+            name="acepta"
+            id="newsletter"
+            value="Envias newsletter"
+          />
+          <div>Estado Civil</div>
+          <select name="talles" id="talles">
+            <option value="C">Casado</option>
+            <option value="S">Soltero</option>
+            <option value="D">Divorciado</option>
+          </select>
+          <br />
+          <label for="mensaje">Mensaje</label>
+          <br />
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          <br />
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar Formulario" />
+        </fieldset>
+      </form>
+    </main>
+    <footer id="pie">
+      <div>
+        <section>
+          <h2 class="mediopago">Medios de pago</h2>
+          <img src="./Imagenes/visa.png" alt="imagentarjetaVisa" />
+          <img src="./Imagenes/mastercard.jpg" alt="imagentarjetaMastercard" />
+          <img src="./Imagenes/american.jpg" alt="imagentarjetaAmerican" />
+        </section>
+        <br />
+        <section class="estilotexto">
+          <h2>newsletter</h2>
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Ingrese su mail" />
+        </section>
+      </div>
+      <section class="estilotexto">
+        <h2>MonsterMotors@gmail.com</h2>
+        <h2>11548787</h2>
+        <h2>Buenos Aires</h2>
+        <h2>@MonstersMotors</h2>
+      </section>
+    </footer>
+  </body>
+</html>
